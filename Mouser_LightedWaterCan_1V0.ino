@@ -1,5 +1,5 @@
 /*
-     Debs Watering Project
+     Mouser Lighted Watering Can Project
     	Copyright (C) 2017  Mouser Electronics
 
    	 This program is free software: you can redistribute it and/or modify
