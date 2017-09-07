@@ -1,4 +1,21 @@
-//Debs Watering Project 
+/*
+     Debs Watering Project
+    	Copyright (C) 2017  Mouser Electronics
+
+   	 This program is free software: you can redistribute it and/or modify
+  	  it under the terms of the GNU General Public License as published by
+   	 the Free Software Foundation, either version 3 of the License, or
+    	any later version.
+
+    	This program is distributed in the hope that it will be useful,
+    	but WITHOUT ANY WARRANTY; without even the implied warranty of
+    	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    	GNU General Public License for more details.
+
+    	You should have received a copy of the GNU General Public License
+    	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 // 0V1 - Get menu Sending
 // 0v2 - Get menu responding
 // 0v3 - Get commands running 
@@ -8,7 +25,7 @@
 // 1v0 - Revise to standard, update colors and order, and remove unnessary code 
 
 /*********************************************************************
- This is an example for our nRF51822 based Bluefruit LE modules
+ This is an example for Adafruit nRF51822 based Bluefruit LE modules
 
  Pick one up today in the adafruit shop!
 
@@ -86,25 +103,8 @@ IRsend mySender; //create an instance of the sending object
 /*=========================================================================*/
 
 
-
-// Create the bluefruit object, either software serial...uncomment these lines
-/*
-SoftwareSerial bluefruitSS = SoftwareSerial(BLUEFRUIT_SWUART_TXD_PIN, BLUEFRUIT_SWUART_RXD_PIN);
-
-Adafruit_BluefruitLE_UART ble(bluefruitSS, BLUEFRUIT_UART_MODE_PIN,
-                      BLUEFRUIT_UART_CTS_PIN, BLUEFRUIT_UART_RTS_PIN);
-*/
-
-/* ...or hardware serial, which does not need the RTS/CTS pins. Uncomment this line */
-// Adafruit_BluefruitLE_UART ble(BLUEFRUIT_HWSERIAL_NAME, BLUEFRUIT_UART_MODE_PIN);
-
 /* ...hardware SPI, using SCK/MOSI/MISO hardware SPI pins and then user selected CS/IRQ/RST */
 Adafruit_BluefruitLE_SPI ble(BLUEFRUIT_SPI_CS, BLUEFRUIT_SPI_IRQ, BLUEFRUIT_SPI_RST);
-
-/* ...software SPI, using SCK/MOSI/MISO user-defined SPI pins and then user selected CS/IRQ/RST */
-//Adafruit_BluefruitLE_SPI ble(BLUEFRUIT_SPI_SCK, BLUEFRUIT_SPI_MISO,
-//                             BLUEFRUIT_SPI_MOSI, BLUEFRUIT_SPI_CS,
-//                             BLUEFRUIT_SPI_IRQ, BLUEFRUIT_SPI_RST);
 
 
 //Define Global Variables
@@ -203,7 +203,6 @@ void BleGattRX(int32_t chars_id, uint8_t data[], uint16_t len)
 /**************************************************************************/
 void setup(void)
 {
-  //while (!Serial);  // required for Flora & Micro
   delay(500);
 
   Serial.begin(115200);
