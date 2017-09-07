@@ -3,6 +3,7 @@
 The Purpose of this project is to add additional functionality to a waterproof set of lights. 
 
 This project is designed to be used with the Following BOM
+
 http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=9edbbc8fcf
 
 This code is dependent on the following libraries
