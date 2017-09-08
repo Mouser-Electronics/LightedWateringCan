@@ -12,6 +12,8 @@ RFLib2 - https://github.com/cyborg5/IRLib2
 
 Arduino library for nRF51822-based Adafruit Bluefruit LE modules - https://github.com/adafruit/Adafruit_BluefruitLE_nRF51
 
-The .ino file and bluefruitconfig.h need to be placed into a single folder in the ~/Documents/Arduino/ folder
+Arduino SAMD board and Adafruit SAMD Support as described - https://learn.adafruit.com/adafruit-feather-m0-bluefruit-le/setup
+
+Copy the Mouser_LightedWaterCan_1V0 folder to ~/Documents/Arduino/, and open the .ino from the copied folder
 
 Instructions for the article can be found at https://www.mouser.com/applications/unknown
