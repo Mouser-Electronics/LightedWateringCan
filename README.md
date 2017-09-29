@@ -16,4 +16,4 @@ Arduino SAMD board and Adafruit SAMD Support as described - https://learn.adafru
 
 Copy the Mouser_LightedWaterCan_1V0 folder to ~/Documents/Arduino/, and open the .ino from the copied folder
 
-Instructions for the article can be found at (https://www.mouser.com/applications/programmable-leds-make-water-and-fire)[https://www.mouser.com/applications/programmable-leds-make-water-and-fire]
+Instructions for the article can be found at [https://www.mouser.com/applications/programmable-leds-make-water-and-fire](https://www.mouser.com/applications/programmable-leds-make-water-and-fire)
